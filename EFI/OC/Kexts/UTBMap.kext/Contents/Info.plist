@@ -22,7 +22,7 @@
 	<string>1.1</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>XHCI</key>
+		<key>XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.dhinakg.USBToolBox.kext</string>
@@ -31,24 +31,24 @@
 			<key>IOMatchCategory</key>
 			<string>USBToolBox</string>
 			<key>IONameMatch</key>
-			<string>XHCI</string>
+			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>IOPCIDevice</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
 				<key>port-count</key>
 				<data>
-				GQAAAA==
+				EAAAAA==
 				</data>
 				<key>ports</key>
 				<dict>
 					<key>HS01</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>255</integer>
+						<integer>3</integer>
 						<key>port</key>
 						<data>
-						AgAAAA==
+						AQAAAA==
 						</data>
 					</dict>
 					<key>HS02</key>
@@ -57,97 +57,70 @@
 						<integer>3</integer>
 						<key>port</key>
 						<data>
-						AwAAAA==
+						AgAAAA==
 						</data>
 					</dict>
 					<key>HS03</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>9</integer>
 						<key>port</key>
 						<data>
-						BAAAAA==
+						AwAAAA==
 						</data>
 					</dict>
 					<key>HS04</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>9</integer>
 						<key>port</key>
 						<data>
-						BQAAAA==
+						BAAAAA==
 						</data>
 					</dict>
 					<key>HS05</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>9</integer>
+						<integer>255</integer>
 						<key>port</key>
 						<data>
-						BgAAAA==
+						BQAAAA==
 						</data>
 					</dict>
 					<key>HS06</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>255</integer>
 						<key>port</key>
 						<data>
-						BwAAAA==
+						BgAAAA==
 						</data>
 					</dict>
 					<key>HS07</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>255</integer>
 						<key>port</key>
 						<data>
-						CAAAAA==
+						BwAAAA==
 						</data>
 					</dict>
 					<key>HS08</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>0</integer>
-						<key>port</key>
-						<data>
-						CQAAAA==
-						</data>
-					</dict>
-					<key>HS09</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>0</integer>
-						<key>port</key>
-						<data>
-						CwAAAA==
-						</data>
-					</dict>
-					<key>HS10</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>0</integer>
-						<key>port</key>
-						<data>
-						DAAAAA==
-						</data>
-					</dict>
-					<key>HS11</key>
-					<dict>
-						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
 						<data>
-						DgAAAA==
+						CAAAAA==
 						</data>
 					</dict>
 					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>9</integer>
+						<integer>3</integer>
 						<key>port</key>
 						<data>
-						EgAAAA==
+						DQAAAA==
 						</data>
 					</dict>
 					<key>SS02</key>
@@ -156,25 +129,25 @@
 						<integer>3</integer>
 						<key>port</key>
 						<data>
-						FwAAAA==
+						DgAAAA==
 						</data>
 					</dict>
 					<key>SS03</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>9</integer>
 						<key>port</key>
 						<data>
-						GAAAAA==
+						DwAAAA==
 						</data>
 					</dict>
 					<key>SS04</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>255</integer>
+						<integer>9</integer>
 						<key>port</key>
 						<data>
-						GQAAAA==
+						EAAAAA==
 						</data>
 					</dict>
 				</dict>
