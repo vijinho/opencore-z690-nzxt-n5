@@ -7,7 +7,7 @@ This is built on the work of many others, too numerous to mention, thanks to all
 - Motherboard: [NZXT N5 Z690](https://nzxt.com/en-GB/product/n5-z690) (with Resize Bar/Above 4G Enabled)
 - CPU: Intel i5-13600K
 - Graphics Card: AMD RX 6800 XT
-- Wireless/Bluetooth: Intel Built-in CNVIO AX210(?)
+- Wireless/Bluetooth: Intel Built-in CNVIO AX211
 
 Everything is OK, except sleep.
 
@@ -15,8 +15,6 @@ Everything is OK, except sleep.
 
 - `config.plist` is excluded, you need to copy the example `config-intel-nzxt-z690.plist` and replace the asterisks with generated valid ROM etc values from an SMBIOS for MacPro7,1
 - Using P-Cores and E-Cores you'll need to change the boot-args  from "-ctrsmt 6c20t" (6-cores 20-threadsd) if you've a different CPUs.  Basically this ensures that performance is maximised, or all P-cores will be downclocked to E-core speed.
-- Power monitoring app can be added with [Intel Power Gadget](https://www.intel.com/content/www/us/en/developer/articles/tool/power-gadget.html) although this has expired and you'll need to use their newer tool.
-- Long-overdue update (Jul 2024) was for OpenCore 1.0
 
 ## Help
 
@@ -42,3 +40,27 @@ If you run into problems with being asked constantly about your iCloud informati
 ```
 scripts/clear-network-interfaces.sh
 ```
+
+# Kexts Used
+
+## [Acidanthera (OpenCore Project)](https://github.com/acidanthera)
+
+- [Lilu](https://github.com/acidanthera/Lilu) (Mandatory)
+- [VirtualSMC](https://github.com/acidanthera/VirtualSMC) (Required emulate Apple SMC)
+- [WhateverGreen](https://github.com/acidanthera/WhateverGreen) (Required for the GPU except if using a non-Intel AMD APU)
+- [AppleALC](https://github.com/acidanthera/AppleALC) - for in-built audio
+- [NVMEFix](https://github.com/acidanthera/NVMeFix) - (optional for fixing NVME issues)
+- [CPUFriend](https://github.com/acidanthera/CPUFriend) - dynamic power management data injection
+  
+  ## Wireless/Networking
+- [Intel Bluetooth IntelBTPatcher.kext and IntelBluetoothFirmware.kext](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) with BlueToolFixup.kext from [acidanthera/BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM) - after IntelBTPatcher.kext and before IntelBluetoothFirmware.kext
+- [AirportItwlm (use in-built WiFi) or itwlm](https://github.com/OpenIntelWireless/itlwm) with [https://github.com/OpenIntelWireless/HeliPort](HeliPort App) (more stable) 
+- [LucyRTL8125Ethernet](https://github.com/Mieze/LucyRTL8125Ethernet) - RealTek 8125 2.5 Gb Ethernet 
+  
+  ## Other
+- [RTCMemoryFixup](https://github.com/acidanthera/RTCMemoryFixup) - CMOS emulation
+- [HibernationFixUp](https://github.com/acidanthera/HibernationFixup) - RTC variables sync with NVRAM
+- [ECEnabler](https://github.com/1Revenger1/ECEnabler) - Embedded Controller for battery status
+- [USBToolBox](https://github.com/USBToolBox/kext) - for mapping USB ports using [USBToolBox/tool](https://github.com/USBToolBox/tool)
+- [BrightnessKeys](https://github.com/acidanthera/BrightnessKeys) - Brightness Keys
+- [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild) and CPUFriendDataProvider.kext - needed for correct P-Core/E-Core speeds
