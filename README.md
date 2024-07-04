@@ -48,6 +48,7 @@ scripts/clear-network-interfaces.sh
 - [Lilu](https://github.com/acidanthera/Lilu) (Mandatory)
 - [VirtualSMC](https://github.com/acidanthera/VirtualSMC) (Required emulate Apple SMC)
 - [WhateverGreen](https://github.com/acidanthera/WhateverGreen) (Required for the GPU except if using a non-Intel AMD APU)
+- [RestrictEvents](https://github.com/acidanthera/RestrictEvents) - block unwanted processes causing compatibility issues
 - [AppleALC](https://github.com/acidanthera/AppleALC) - for in-built audio
 - [NVMEFix](https://github.com/acidanthera/NVMeFix) - (optional for fixing NVME issues)
 - [CPUFriend](https://github.com/acidanthera/CPUFriend) - dynamic power management data injection
