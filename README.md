@@ -1,5 +1,7 @@
 # Opencore Ventura EFI - i5-13600K, RX6800, NZXT N5 Z690 Motherboard
 
+**NOTE**: I no longer own this motherboard, so I will only update if provided with patches/updates.
+
 This is built on the work of many others, too numerous to mention, thanks to all, and I am sharing this back with the community. It is triple-booting on a system shared with Windows 10, Linux (PopOS using BTRFS filesystem).
 
 ## Hardware tested
